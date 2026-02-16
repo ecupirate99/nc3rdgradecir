@@ -49,11 +49,44 @@ npm install
 npm run dev
 ```
 
-### 5. Deployment
-This project is ready for deployment to **Vercel**, **Netlify**, or **GitHub Pages**. 
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
-- **Environment Variables**: Ensure you add your `.env` variables to your deployment platform's settings.
+### 5. Deployment (GitHub & Vercel)
+
+This project is built with Vite, making it natively compatible with Vercel and other modern hosting platforms.
+
+#### Local Testing
+1. Ensure your `.env` file exists and contains your keys.
+2. Run `npm run dev`.
+
+#### Deploying to Vercel
+1. **Push to GitHub**: Follow the steps in the **GitHub Push** section below.
+2. **Connect to Vercel**: Import your repository into Vercel.
+3. **Set Environment Variables**: In the Vercel Dashboard, go to **Settings > Environment Variables** and add the following keys from your `.env`:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+   - `VITE_GEMINI_API_KEY`
+4. **Deploy**: Vercel will automatically detect Vite and use `npm run build` to deploy your site to production.
+
+---
+
+## 🚀 GitHub Push Instructions
+
+To push this code to a new GitHub repository securely:
+
+```powershell
+# 1. Initialize git
+git init
+
+# 2. Stage files (sensitive files in .gitignore are safe)
+git add .
+
+# 3. Commit
+git commit -m "feat: initial deployment-ready version"
+
+# 4. Add remote and push
+git remote add origin https://github.com/your-username/your-repo-name.git
+git branch -M main
+git push -u origin main
+```
 
 ---
 
