@@ -1,0 +1,4 @@
+pypdf
+google-generativeai
+python-dotenv
+httpx
