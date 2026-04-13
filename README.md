@@ -6,7 +6,7 @@ A premium, minimalist RAG (Retrieval-Augmented Generation) chatbot designed to h
 - **Strictly Relevant Answers**: Focused, 1-2 sentence direct answers.
 - **Supporting Standards**: Automatically lists the specific curriculum codes that support the answer.
 - **Premium UI**: Glassmorphic, mobile-friendly design with smooth animations.
-- **High-Performance RAG**: Powered by Google Gemini 2.5 Flash and Supabase Vector database.
+- **High-Performance RAG**: Powered by Google Gemini 3 Flash Preview and Supabase Vector database.
 - **Smart Formatting**: Clean, minimalist Markdown output with blockquotes for general habits and dividers between categories.
 
 ---
@@ -16,7 +16,7 @@ A premium, minimalist RAG (Retrieval-Augmented Generation) chatbot designed to h
 - **Styling**: Vanilla CSS (Premium Glassmorphism)
 - **Database**: Supabase (pgvector)
 - **AI Models**: 
-  - Reasoning: `gemini-2.5-flash`
+  - Reasoning: `gemini-3-flash-preview`
   - Embeddings: `gemini-embedding-001` (768-dim)
 - **Ingestion**: Python (httpx + pypdf)
 
