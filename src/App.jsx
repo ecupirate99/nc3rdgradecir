@@ -62,7 +62,7 @@ function App() {
       const context = documents?.map(doc => doc.content).join('\n\n') || "No relevant context found.";
 
       // 3. Generate Answer with Gemini
-      const chatModel = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
+      const chatModel = genAI.getGenerativeModel({ model: "gemini-3.1-flash-lite" });
       const prompt = `
         You are an expert on the North Carolina (NC) 3rd Grade Standard Course of Study (SCOS). 
         When answering, follow these strict rules:
