@@ -16,7 +16,7 @@ A premium, minimalist RAG (Retrieval-Augmented Generation) chatbot designed to h
 - **Styling**: Vanilla CSS (Premium Glassmorphism)
 - **Database**: Supabase (pgvector)
 - **AI Models**: 
-  - Reasoning: `gemini-3-flash-preview`
+  - Reasoning: `gemini-3.1-flash-lite`
   - Embeddings: `gemini-embedding-001` (768-dim)
 - **Ingestion**: Python (httpx + pypdf)
 
